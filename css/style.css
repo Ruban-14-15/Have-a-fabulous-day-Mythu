@@ -191,3 +191,14 @@ section{width:100%;display:flex;flex-direction:column;align-items:center;}
   .wish-card{padding:24px 20px;border-radius:20px;}
   .card-container{height:400px;}
 }
+/* Fix Wish Card Floating on Mobile */
+@media screen and (max-width: 600px) {
+    .wish-card {
+        animation: none !important;
+        transform: none !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        margin: 24px auto !important;
+    }
+}
