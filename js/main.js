@@ -72,24 +72,7 @@
   }
 })();
 
-// ---- floating CSS petals (guaranteed-visible ambient layer) ----
-(function(){
-  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const count=reduced?6:16;
-  const colors=['#ffb3d9','#ffd9ec','#ffffff','#ffd166'];
-  for(let i=0;i<count;i++){
-    const p=document.createElement('div');
-    p.className='petal-css';
-    const size=6+Math.random()*7;
-    p.style.left=Math.random()*100+'vw';
-    p.style.width=size+'px';
-    p.style.height=size*1.3+'px';
-    p.style.background=colors[i%colors.length];
-    p.style.animationDuration=(3+Math.random()*4)+'s';
-    p.style.animationDelay=(-Math.random()*6)+'s';
-    document.body.appendChild(p);
-  }
-})();
+
 
 // ---- 3D pointer tilt for .tilt elements ----
 (function(){
