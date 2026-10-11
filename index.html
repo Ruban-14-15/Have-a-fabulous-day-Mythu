@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Happy Birthday, Mythu</title>
+<meta name="theme-color" content="#1a1240"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Dancing+Script:wght@600;700&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<canvas id="skyCanvas"></canvas>
+<div class="moon"></div>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <img src="img/banner.png" alt="Happy Birthday banner" class="banner reveal reveal-flip"/>
+    <div class="user-frame reveal tilt"><img src="img/user.jpeg" alt="Mythu"/></div>
+    <div class="typewrap reveal" aria-live="polite"><span id="typewriter"></span><span class="cursor" aria-hidden="true"></span></div>
+  </section>
+
+  <section>
+    <div class="wish-card reveal tilt">
+      <div class="sparkles" id="sparkles"></div>
+      <div class="badge">🌙</div>
+      <h1>Hey, Mythu</h1>
+      <p>
+        hi, it's <strong>Ruba</strong> — Happy Birthday to one of the most special people in my life!❤️🌸<br><br>
+
+    One day, I started thinking about our friendship and everything we’ve experienced together. Sometimes, two people who genuinely care about each other end up hurting each other through misunderstandings, unspoken feelings, and assumptions.<br><br>
+
+There have been moments when I’ve wondered, “Are we going to be okay after this?” Not because our friendship means nothing, but because it means so much to me that the thought of things changing between us hurts.<br><br>
+
+I know I’ve made mistakes, and I may have hurt you without intending to. I’m learning that my intentions aren’t everything; your feelings matter too. I want to understand where I’ve gone wrong, listen to you, and become better at handling our friendship.<br><br>
+
+I know I sometimes overthink, make assumptions, and let my emotions speak louder than my understanding. I’m not saying this to justify my actions. I genuinely want to learn from my mistakes and communicate with you more maturely.<br><br>
+
+Mythu, I don’t expect our friendship to be perfect. I want it to be honest, understanding, and peaceful. We don’t have to agree on everything, but I hope we can respect each other’s feelings, apologise sincerely, and learn from our mistakes.<br><br>
+
+If I’ve hurt you, please tell me. If I’m wrong, correct me. You can scold me, shout at me, argue with me, and even beat me 😂, but please don’t go silent without giving us a chance to talk things through. I’d rather have an uncomfortable conversation with you than let misunderstandings grow between us.<br><br>
+
+If either of us needs time to calm down, that’s okay. We can take that time and talk when we’re ready. I just hope we’ll always come back to each other and resolve things with understanding.<br><br>
+
+<span class="glow">One thing Mythu, ❤️ I wish for this from the bottom of my heart: whenever a problem comes between us, let’s face it together instead of allowing it to come between us. If something heavy is weighing on your heart, I hope you’ll feel comfortable sharing it with me whenever you want to. Whatever it may be, please remember that you don’t have to carry everything alone. 🫂❤️<br><br>
+If you agree with this and genuinely feel the same way, could you please send me just one word on WhatsApp: “Yes” 🥹❤️ I promise I won’t keep asking you for the same reassurance again. I want to learn to trust your words, respect your feelings, and let our actions build the understanding we both deserve. ❤️♾️</span><br><br>
+
+I’m also learning to trust your words instead of allowing my overthinking to create unnecessary doubts. I understand that you have your own life, responsibilities, and feelings. I don’t want my fear of losing this friendship to become a burden for you. I want to respect your space while learning to express my feelings in a healthier way.<br><br>
+
+I'm not grateful that we hurt each other, but I am grateful for what happened afterward. We listened, apologised, and made changes. Our friendship became more honest because we learned that we could talk about the difficult parts of our relationship, too.<br><br>
+
+I value the memories we’ve shared, the conversations we’ve had, and the friendship we’ve built. Those moments mean a lot to me, and I hope we’ll continue creating beautiful memories together.<br><br>
+
+On your special day, I pray that God blesses you and your family with happiness, peace, good health, success, and countless blessings. May all your dreams come true, and may we create many more beautiful memories together♾️❤️<br><br>
+
+Thank you for being part of my life, Mythu. Let's carry the beautiful memories with us and remember the lessons that have helped us grow🥹💗<br><br>
+	With lots of love and prayers, Your Best friend❤️🎂
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="cake-wrap reveal"><div class="flame"></div><img src="img/cake.svg" alt="Birthday cake" class="cake-img"/></div>
+  </section>
+
+  <section>
+    <div class="section-title reveal">Starlit Memories</div>
+    <div class="gallery-stage reveal reveal-left tilt">
+      <div id="cube" class="cube">
+        <div class="face face1" style="background-image:url('img/1.jpeg')"></div>
+        <div class="face face2" style="background-image:url('img/2.jpeg')"></div>
+        <div class="face face3" style="background-image:url('img/3.jpeg')"></div>
+        <div class="face face4" style="background-image:url('img/4.jpeg')"></div>
+      </div>
+    </div>
+    <div class="gallery-ui reveal">
+      <button id="prevImg" aria-label="Previous photo">◀</button>
+      <button id="nextImg" aria-label="Next photo">▶</button>
+    </div>
+    <div class="hint reveal">swipe, drag, or use the arrow keys ✨</div>
+  </section>
+
+  <section>
+    <div class="section-title reveal">One Last Wish</div>
+    <div class="card-container reveal reveal-right" id="cardContainer">
+      <div class="card" id="card">
+        <div class="card-side front">
+          <h1>❤️Gentle Reminders - Things You Might Need to Hear Today</h1>
+          <h3>Mythu,❤️</h3>
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="34" fill="#ffd9ec"/>
+            <path d="M60 26a34 34 0 1 0 34 34 27 27 0 0 1-34-34z" fill="#fff6fb"/>
+            <circle cx="30" cy="24" r="2.4" fill="#ffd166"/>
+            <circle cx="96" cy="40" r="1.8" fill="#ffd166"/>
+            <circle cx="14" cy="70" r="1.6" fill="#ffd166"/>
+            <circle cx="100" cy="86" r="2" fill="#ffd166"/>
+          </svg>
+          <button class="open-button" id="toggleButton">Open Card</button>
+        </div>
+        <div class="card-side back">
+          <h2>Happy Birthday</h2>
+          <p>
+            you’re not just a friend in my life; you’re one of those rare people who have touched my heart in ways I could never fully explain, even if I spent my whole life trying.
+ You’ve become a part of my happiness, my precious memories, my prayers, that make my life feel more meaningful.
+You’ve seen sides of me that I struggle to show others, and the bond I feel with you holds a special place in my heart that words can never completely describe.
+I’d still be grateful to God for the day He brought you into my life, Mythu, because having you as my friend is a blessing I’ll always treasure, and be ready to slave to God for that           <br><br>
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer reveal">
+    <div class="msg">thanks for visiting, Mythu 🌙</div>
+    <div class="by">Always wishing you happiness, peace, and beautiful memories.</div>
+  </div>
+
+</div>
+
+<script src="js/sky.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
