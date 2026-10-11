@@ -86,7 +86,7 @@
     p.style.height=size*1.3+'px';
     p.style.background=colors[i%colors.length];
     p.style.animationDuration=(3+Math.random()*4)+'s';
-    p.style.animationDelay=(-Math.random()*18)+'s';
+    p.style.animationDelay=(-Math.random()*6)+'s';
     document.body.appendChild(p);
   }
 })();
